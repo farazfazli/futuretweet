@@ -1,6 +1,5 @@
 # FutureTweet
-
-**Send tweets in the future, with CRON-like syntax**
+Send tweets in the future, with CRON-like syntax. From CRON format help, check https://crontab.guru/
 
 ## Getting Started
 
