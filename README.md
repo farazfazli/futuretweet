@@ -1,5 +1,5 @@
 # FutureTweet
-Send tweets in the future, with CRON-like syntax. From CRON format help, check https://crontab.guru/
+Send tweets in the future from a text file, with CRON-like syntax. From CRON format help, check https://crontab.guru/
 
 ## Getting Started
 
@@ -24,3 +24,5 @@ Send tweets in the future, with CRON-like syntax. From CRON format help, check h
     ```
       iex -S mix 
     ```
+
+To edit tweets simply edit [priv/tweets.txt](https://github.com/farazfazli/futuretweet/blob/master/priv/tweets.txt) and replace it with a newline separated list of tweets. They are tweeted out randomly from this file.
