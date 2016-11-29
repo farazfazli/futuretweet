@@ -1,24 +1,26 @@
 # FutureTweet
+Send tweets in the future, with CRON-like syntax. From CRON format help, check https://crontab.guru/
 
-**TODO: Add description**
+## Getting Started
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add `future_tweet` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:future_tweet, "~> 0.1.0"}]
-    end
+1. 
+  Create a Twitter app and set the following env variables:
+    ```
+      TWITTER_CONSUMER_KEY
+      TWITTER_CONSUMER_SECRET
+      TWITTER_ACCESS_KEY
+      TWITTER_ACCESS_SECRET
     ```
 
-  2. Ensure `future_tweet` is started before your application:
+  2.
+    Get dependencies
+    
+        mix deps.get
 
-    ```elixir
-    def application do
-      [applications: [:future_tweet]]
-    end
+
+
+  3.
+    Run server
     ```
-
+      iex -S mix 
+    ```
