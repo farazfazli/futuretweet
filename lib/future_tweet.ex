@@ -16,9 +16,8 @@ defmodule FutureTweet do
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: FutureTweet.Supervisor]
     process = Supervisor.start_link(children, opts)
-    # You can set custom cron or path like so:
-    # FutureTweet.Scheduler.schedule_file("* * * * *", "/Users/farazfazli/Documents/elixir/future_tweet/priv/tweets.txt")
-    FutureTweet.Scheduler.schedule_file()
+    # Defaults to every 30 mins, pass custom CRON as first arg to change
+    FutureTweet.Scheduler.schedule_file(Path.join("#{:code.priv_dir(:future_tweet)}", "tweets.txt"))
     # Return process
     process
   end

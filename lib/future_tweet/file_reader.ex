@@ -1,7 +1,7 @@
 defmodule FutureTweet.FileReader do
 	def get_strings_to_tweet(path) do
 		# Read from path
-		File.read!("/Users/farazfazli/Documents/elixir/future_tweet/priv/tweets.txt")
+		File.read!(path)
 		# Split at new line
 		|> String.split("\n")
 		# I prefer anon funcs without the &(...) shortcut
